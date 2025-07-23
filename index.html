@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Юридическое сопровождение в получении водительского удостоверения</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f8fb;
+      color: #1e2a38;
+    }
+    header, section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      background-color: #1e2a38;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      background: #14202e;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .services ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .about img {
+      float: right;
+      width: 150px;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+    .reviews blockquote {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 5px solid #3b7ddd;
+    }
+    .contact form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact input, .contact textarea, .contact button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .faq details {
+      margin-bottom: 10px;
+    }
+    .whatsapp {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: #14202e;
+      color: white;
+    }
+    @media(max-width: 600px) {
+      .about img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Юридическое сопровождение в получении водительского удостоверения</h1>
+  <p>Профессиональная помощь в решении любых вопросов с правами</p>
+  <a href="#contact" class="whatsapp">Оставить заявку</a>
+</header>
+
+<nav>
+  <a href="#services">Услуги</a>
+  <a href="#about">О специалисте</a>
+  <a href="#reviews">Отзывы</a>
+  <a href="#faq">Вопрос-ответ</a>
+  <a href="#contact">Контакты</a>
+</nav>
+
+<section id="services" class="services">
+  <h2>Наши услуги</h2>
+  <ul>
+    <li>Помощь при лишении водительских прав</li>
+    <li>Восстановление удостоверения после утраты или истечения срока</li>
+    <li>Юридическая поддержка при сдаче экзаменов в ГИБДД</li>
+    <li>Сопровождение при прохождении медицинской комиссии</li>
+  </ul>
+</section>
+
+<section id="about" class="about">
+  <h2>О специалисте</h2>
+  <img src="https://via.placeholder.com/150" alt="Фотография специалиста" />
+  <p>Более 10 лет опыта в сфере административного права и защиты прав водителей. Индивидуальный подход, надёжность и полное сопровождение на всех этапах получения или восстановления водительского удостоверения.</p>
+</section>
+
+<section id="reviews" class="reviews">
+  <h2>Отзывы клиентов</h2>
+  <blockquote>
+    <strong>Анна П.</strong>: Спасибо за помощь при восстановлении прав! Всё прошло быстро и спокойно.
+  </blockquote>
+  <blockquote>
+    <strong>Сергей В.</strong>: Отличный юрист. Сопровождал меня на всех этапах, сэкономил кучу нервов.
+  </blockquote>
+</section>
+
+<section id="faq" class="faq">
+  <h2>Часто задаваемые вопросы</h2>
+  <details>
+    <summary>Сколько стоит юридическое сопровождение?</summary>
+    <p>Стоимость зависит от сложности дела. Оставьте заявку — мы проконсультируем бесплатно.</p>
+  </details>
+  <details>
+    <summary>Можно ли вернуть права после лишения?</summary>
+    <p>В некоторых случаях — да. Мы проведем анализ ситуации и предложим стратегию.</p>
+  </details>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Контакты и заявка</h2>
+  <p>Свяжитесь с нами через WhatsApp или оставьте заявку ниже:</p>
+  <a href="#" class="whatsapp">Написать в WhatsApp</a>
+  <form onsubmit="sendForm(event)">
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="tel" placeholder="Телефон для связи" required>
+    <textarea placeholder="Ваш вопрос или комментарий" rows="4" required></textarea>
+    <button type="submit">Отправить заявку</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Юридическое сопровождение прав. Все права защищены.
+</footer>
+
+<script>
+  function sendForm(event) {
+    event.preventDefault();
+    alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+    event.target.reset();
+  }
+</script>
+
+</body>
+</html>
